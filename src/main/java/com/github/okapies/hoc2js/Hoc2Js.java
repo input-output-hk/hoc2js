@@ -29,6 +29,7 @@ public class Hoc2Js {
         }
 
         // resolve
+        obj = ConfigFactory.load(obj);
         ConfigResolveOptions resolveOpts = loadResolveOpts(config);
         obj = obj.resolveWith(config, resolveOpts);
 
